@@ -1,0 +1,501 @@
+product_id,product_name,category,price
+PROD10000,Vegetables (Organic),Frozen,18.46
+PROD10001,Vegetables (Organic),Frozen,19.09
+PROD10002,Fish (Family Pack),Meat,3.15
+PROD10003,Nuts (Organic),Snacks,10.99
+PROD10004,Cheese (Family Pack),Dairy,12.55
+PROD10005,Cookies (Large),Bakery,6.85
+PROD10006,Tomatoes (Organic),Produce,21.62
+PROD10007,Chips (Family Pack),Snacks,23.83
+PROD10008,Ice Cream (Organic),Frozen,4.52
+PROD10009,Juice (Family Pack),Beverages,23.38
+PROD10010,Vegetables (Organic),Frozen,4.12
+PROD10011,Pasta (Organic),Pantry,4.87
+PROD10012,Pizza (Family Pack),Frozen,9.94
+PROD10013,Rice (Organic),Pantry,20.31
+PROD10014,Coffee (Family Pack),Beverages,10.95
+PROD10015,Chocolate (Organic),Snacks,12.54
+PROD10016,Pizza (Large),Frozen,24.18
+PROD10017,Cereal (Family Pack),Pantry,16.57
+PROD10018,Crackers (Organic),Snacks,7.16
+PROD10019,Pizza (Regular),Frozen,11.1
+PROD10020,Pasta (Family Pack),Pantry,21.78
+PROD10021,Cheese (Regular),Dairy,18.09
+PROD10022,Butter (Family Pack),Dairy,11.99
+PROD10023,Bananas (Family Pack),Produce,8.46
+PROD10024,Pork (Large),Meat,6.35
+PROD10025,Bacon (Large),Meat,23.05
+PROD10026,Yogurt (Family Pack),Dairy,7.98
+PROD10027,Chocolate (Large),Snacks,18.42
+PROD10028,Chicken (Family Pack),Meat,18.09
+PROD10029,Pizza (Organic),Frozen,4.93
+PROD10030,Muffins (Organic),Bakery,8.06
+PROD10031,Ice Cream (Family Pack),Frozen,10.31
+PROD10032,Butter (Large),Dairy,5.88
+PROD10033,Crackers (Large),Snacks,19.84
+PROD10034,Chocolate (Large),Snacks,16.35
+PROD10035,Cookies (Organic),Bakery,13.58
+PROD10036,Pasta (Organic),Pantry,3.75
+PROD10037,Bagels (Large),Bakery,14.17
+PROD10038,Apples (Regular),Produce,19.48
+PROD10039,Bacon (Organic),Meat,2.82
+PROD10040,Bread (Regular),Bakery,7.67
+PROD10041,Nuts (Large),Snacks,19.23
+PROD10042,Nuts (Large),Snacks,13.06
+PROD10043,Crackers (Family Pack),Snacks,15.6
+PROD10044,Cheese (Family Pack),Dairy,4.36
+PROD10045,Juice (Organic),Beverages,2.1
+PROD10046,Cheese (Family Pack),Dairy,8.28
+PROD10047,Muffins (Large),Bakery,13.96
+PROD10048,Butter (Regular),Dairy,3.77
+PROD10049,Bagels (Regular),Bakery,12.07
+PROD10050,Milk (Regular),Dairy,24.18
+PROD10051,Canned Soup (Organic),Pantry,2.11
+PROD10052,Chocolate (Organic),Snacks,10.76
+PROD10053,Vegetables (Family Pack),Frozen,2.37
+PROD10054,Pizza (Regular),Frozen,7.07
+PROD10055,Muffins (Large),Bakery,2.49
+PROD10056,Milk (Family Pack),Dairy,6.3
+PROD10057,Apples (Large),Produce,24.15
+PROD10058,Nuts (Organic),Snacks,23.9
+PROD10059,Beef (Large),Meat,14.4
+PROD10060,Bacon (Organic),Meat,10.86
+PROD10061,Cookies (Regular),Bakery,24.57
+PROD10062,Chocolate (Organic),Snacks,14.94
+PROD10063,Pizza (Family Pack),Frozen,2.93
+PROD10064,Carrots (Regular),Produce,3.17
+PROD10065,Cheese (Family Pack),Dairy,16.27
+PROD10066,Milk (Organic),Dairy,6.23
+PROD10067,Bread (Family Pack),Bakery,21.03
+PROD10068,Fish (Family Pack),Meat,12.64
+PROD10069,Tomatoes (Family Pack),Produce,19.02
+PROD10070,Eggs (Large),Dairy,17.84
+PROD10071,Fish (Regular),Meat,11.16
+PROD10072,Apples (Family Pack),Produce,23.4
+PROD10073,Cereal (Family Pack),Pantry,21.6
+PROD10074,Carrots (Organic),Produce,7.27
+PROD10075,Soda (Large),Beverages,13.94
+PROD10076,Cookies (Organic),Bakery,3.79
+PROD10077,Crackers (Organic),Snacks,21.68
+PROD10078,Pork (Family Pack),Meat,13.5
+PROD10079,Pizza (Regular),Frozen,14.5
+PROD10080,Crackers (Regular),Snacks,18.97
+PROD10081,Pork (Organic),Meat,21.24
+PROD10082,Rice (Regular),Pantry,22.72
+PROD10083,Eggs (Large),Dairy,24.76
+PROD10084,Bagels (Family Pack),Bakery,16.59
+PROD10085,Lettuce (Organic),Produce,19.28
+PROD10086,Bagels (Organic),Bakery,18.0
+PROD10087,Vegetables (Regular),Frozen,12.12
+PROD10088,Bacon (Family Pack),Meat,2.25
+PROD10089,Bagels (Regular),Bakery,20.87
+PROD10090,Vegetables (Family Pack),Frozen,10.98
+PROD10091,Chocolate (Regular),Snacks,23.15
+PROD10092,Bananas (Family Pack),Produce,8.6
+PROD10093,Milk (Regular),Dairy,23.08
+PROD10094,Bagels (Organic),Bakery,16.58
+PROD10095,Cookies (Family Pack),Bakery,14.54
+PROD10096,Pizza (Family Pack),Frozen,24.87
+PROD10097,Pasta (Family Pack),Pantry,5.29
+PROD10098,Juice (Family Pack),Beverages,20.99
+PROD10099,Eggs (Regular),Dairy,12.14
+PROD10100,Cookies (Family Pack),Bakery,5.03
+PROD10101,Cereal (Family Pack),Pantry,13.91
+PROD10102,Carrots (Organic),Produce,9.91
+PROD10103,Muffins (Large),Bakery,16.4
+PROD10104,Bacon (Regular),Meat,20.37
+PROD10105,Nuts (Regular),Snacks,20.87
+PROD10106,Butter (Regular),Dairy,21.08
+PROD10107,Apples (Organic),Produce,24.07
+PROD10108,Carrots (Organic),Produce,21.02
+PROD10109,Soda (Large),Beverages,11.82
+PROD10110,Milk (Large),Dairy,23.81
+PROD10111,Pork (Large),Meat,23.98
+PROD10112,Vegetables (Organic),Frozen,11.58
+PROD10113,Eggs (Regular),Dairy,8.58
+PROD10114,Crackers (Family Pack),Snacks,6.44
+PROD10115,Milk (Organic),Dairy,13.48
+PROD10116,Bread (Large),Bakery,19.45
+PROD10117,Crackers (Family Pack),Snacks,14.26
+PROD10118,Coffee (Regular),Beverages,24.09
+PROD10119,Nuts (Regular),Snacks,5.39
+PROD10120,Bagels (Regular),Bakery,17.63
+PROD10121,Cookies (Large),Bakery,23.29
+PROD10122,Pork (Regular),Meat,16.26
+PROD10123,Carrots (Regular),Produce,24.55
+PROD10124,Water (Large),Beverages,23.64
+PROD10125,Chocolate (Organic),Snacks,15.26
+PROD10126,Bagels (Family Pack),Bakery,16.83
+PROD10127,Cookies (Large),Bakery,2.13
+PROD10128,Coffee (Regular),Beverages,6.89
+PROD10129,Vegetables (Organic),Frozen,10.61
+PROD10130,Tomatoes (Family Pack),Produce,10.27
+PROD10131,Butter (Organic),Dairy,9.65
+PROD10132,Cereal (Organic),Pantry,14.29
+PROD10133,Bagels (Family Pack),Bakery,2.24
+PROD10134,Nuts (Large),Snacks,21.88
+PROD10135,Pasta (Large),Pantry,5.73
+PROD10136,Bread (Organic),Bakery,24.64
+PROD10137,Cereal (Organic),Pantry,3.31
+PROD10138,Juice (Regular),Beverages,23.58
+PROD10139,Crackers (Large),Snacks,22.78
+PROD10140,Coffee (Family Pack),Beverages,20.65
+PROD10141,Soda (Regular),Beverages,7.76
+PROD10142,Vegetables (Regular),Frozen,3.88
+PROD10143,Pizza (Family Pack),Frozen,22.99
+PROD10144,Chips (Family Pack),Snacks,2.98
+PROD10145,Fish (Regular),Meat,13.02
+PROD10146,Chicken (Regular),Meat,4.56
+PROD10147,Coffee (Organic),Beverages,17.26
+PROD10148,Rice (Regular),Pantry,23.43
+PROD10149,Milk (Regular),Dairy,21.27
+PROD10150,Beef (Organic),Meat,8.75
+PROD10151,Cheese (Family Pack),Dairy,2.6
+PROD10152,Apples (Large),Produce,13.89
+PROD10153,Bread (Regular),Bakery,13.03
+PROD10154,Vegetables (Family Pack),Frozen,15.33
+PROD10155,Chips (Large),Snacks,12.55
+PROD10156,Juice (Organic),Beverages,15.18
+PROD10157,Muffins (Regular),Bakery,15.37
+PROD10158,Ice Cream (Family Pack),Frozen,22.34
+PROD10159,Butter (Large),Dairy,4.91
+PROD10160,Crackers (Large),Snacks,15.59
+PROD10161,Canned Soup (Family Pack),Pantry,3.43
+PROD10162,Bacon (Regular),Meat,9.89
+PROD10163,Eggs (Family Pack),Dairy,9.86
+PROD10164,Pasta (Regular),Pantry,24.21
+PROD10165,Canned Soup (Large),Pantry,18.16
+PROD10166,Bread (Organic),Bakery,2.32
+PROD10167,Pork (Organic),Meat,12.03
+PROD10168,Ice Cream (Organic),Frozen,13.83
+PROD10169,Chicken (Regular),Meat,19.26
+PROD10170,Canned Soup (Family Pack),Pantry,24.44
+PROD10171,Ice Cream (Large),Frozen,9.74
+PROD10172,Bananas (Regular),Produce,7.03
+PROD10173,Apples (Large),Produce,9.76
+PROD10174,Tomatoes (Family Pack),Produce,6.78
+PROD10175,Carrots (Regular),Produce,16.5
+PROD10176,Canned Soup (Organic),Pantry,6.63
+PROD10177,Ice Cream (Regular),Frozen,22.52
+PROD10178,Chips (Organic),Snacks,5.23
+PROD10179,Chicken (Large),Meat,9.23
+PROD10180,Muffins (Family Pack),Bakery,22.69
+PROD10181,Pasta (Regular),Pantry,12.98
+PROD10182,Cereal (Large),Pantry,7.49
+PROD10183,Rice (Organic),Pantry,22.0
+PROD10184,Cookies (Regular),Bakery,4.78
+PROD10185,Bagels (Organic),Bakery,19.55
+PROD10186,Lettuce (Regular),Produce,7.78
+PROD10187,Lettuce (Family Pack),Produce,8.98
+PROD10188,Crackers (Organic),Snacks,12.48
+PROD10189,Vegetables (Large),Frozen,8.76
+PROD10190,Vegetables (Large),Frozen,16.5
+PROD10191,Cookies (Regular),Bakery,9.47
+PROD10192,Bread (Family Pack),Bakery,16.49
+PROD10193,Crackers (Family Pack),Snacks,16.79
+PROD10194,Water (Large),Beverages,24.08
+PROD10195,Coffee (Regular),Beverages,20.59
+PROD10196,Apples (Regular),Produce,12.3
+PROD10197,Crackers (Large),Snacks,5.67
+PROD10198,Lettuce (Regular),Produce,21.39
+PROD10199,Yogurt (Family Pack),Dairy,9.6
+PROD10200,Cereal (Large),Pantry,7.28
+PROD10201,Bread (Regular),Bakery,12.86
+PROD10202,Bacon (Organic),Meat,8.33
+PROD10203,Water (Family Pack),Beverages,8.01
+PROD10204,Cheese (Regular),Dairy,17.16
+PROD10205,Chips (Regular),Snacks,22.25
+PROD10206,Canned Soup (Regular),Pantry,9.59
+PROD10207,Milk (Family Pack),Dairy,7.2
+PROD10208,Chips (Organic),Snacks,2.74
+PROD10209,Cereal (Family Pack),Pantry,14.28
+PROD10210,Carrots (Family Pack),Produce,11.5
+PROD10211,Chicken (Regular),Meat,19.54
+PROD10212,Eggs (Organic),Dairy,21.98
+PROD10213,Pizza (Large),Frozen,6.1
+PROD10214,Tomatoes (Regular),Produce,8.96
+PROD10215,Eggs (Regular),Dairy,7.25
+PROD10216,Cereal (Organic),Pantry,7.84
+PROD10217,Rice (Large),Pantry,14.67
+PROD10218,Cheese (Regular),Dairy,3.51
+PROD10219,Bacon (Family Pack),Meat,12.07
+PROD10220,Beef (Organic),Meat,4.53
+PROD10221,Chips (Large),Snacks,23.36
+PROD10222,Cereal (Large),Pantry,14.9
+PROD10223,Bread (Large),Bakery,22.21
+PROD10224,Yogurt (Organic),Dairy,17.75
+PROD10225,Butter (Organic),Dairy,22.38
+PROD10226,Chips (Organic),Snacks,17.72
+PROD10227,Crackers (Large),Snacks,12.18
+PROD10228,Soda (Large),Beverages,24.69
+PROD10229,Chicken (Organic),Meat,21.3
+PROD10230,Rice (Regular),Pantry,9.16
+PROD10231,Water (Large),Beverages,9.29
+PROD10232,Apples (Regular),Produce,10.05
+PROD10233,Eggs (Large),Dairy,24.88
+PROD10234,Muffins (Regular),Bakery,21.96
+PROD10235,Fish (Large),Meat,7.56
+PROD10236,Nuts (Organic),Snacks,9.54
+PROD10237,Nuts (Large),Snacks,13.15
+PROD10238,Yogurt (Regular),Dairy,14.5
+PROD10239,Eggs (Family Pack),Dairy,3.3
+PROD10240,Cookies (Organic),Bakery,15.81
+PROD10241,Cereal (Large),Pantry,5.79
+PROD10242,Chips (Large),Snacks,7.03
+PROD10243,Muffins (Large),Bakery,9.47
+PROD10244,Tomatoes (Family Pack),Produce,14.68
+PROD10245,Bread (Family Pack),Bakery,4.62
+PROD10246,Yogurt (Large),Dairy,2.38
+PROD10247,Muffins (Large),Bakery,17.35
+PROD10248,Chocolate (Regular),Snacks,7.9
+PROD10249,Soda (Family Pack),Beverages,22.38
+PROD10250,Coffee (Organic),Beverages,3.0
+PROD10251,Soda (Regular),Beverages,18.32
+PROD10252,Butter (Family Pack),Dairy,3.97
+PROD10253,Bacon (Regular),Meat,19.08
+PROD10254,Soda (Family Pack),Beverages,22.02
+PROD10255,Cheese (Large),Dairy,18.19
+PROD10256,Cookies (Organic),Bakery,19.46
+PROD10257,Cookies (Regular),Bakery,20.66
+PROD10258,Pizza (Regular),Frozen,14.97
+PROD10259,Ice Cream (Family Pack),Frozen,24.45
+PROD10260,Ice Cream (Family Pack),Frozen,5.63
+PROD10261,Muffins (Family Pack),Bakery,20.79
+PROD10262,Butter (Family Pack),Dairy,16.12
+PROD10263,Pasta (Family Pack),Pantry,14.94
+PROD10264,Cereal (Family Pack),Pantry,7.08
+PROD10265,Cereal (Family Pack),Pantry,18.15
+PROD10266,Chicken (Large),Meat,2.71
+PROD10267,Soda (Family Pack),Beverages,2.79
+PROD10268,Bread (Organic),Bakery,3.08
+PROD10269,Muffins (Organic),Bakery,11.42
+PROD10270,Tomatoes (Family Pack),Produce,19.83
+PROD10271,Canned Soup (Family Pack),Pantry,23.36
+PROD10272,Soda (Large),Beverages,3.69
+PROD10273,Crackers (Large),Snacks,13.27
+PROD10274,Milk (Family Pack),Dairy,24.28
+PROD10275,Pizza (Regular),Frozen,20.35
+PROD10276,Juice (Large),Beverages,9.76
+PROD10277,Chocolate (Large),Snacks,11.71
+PROD10278,Carrots (Large),Produce,4.36
+PROD10279,Bacon (Family Pack),Meat,14.96
+PROD10280,Canned Soup (Large),Pantry,21.94
+PROD10281,Water (Organic),Beverages,9.15
+PROD10282,Vegetables (Large),Frozen,6.81
+PROD10283,Pizza (Regular),Frozen,17.26
+PROD10284,Pizza (Family Pack),Frozen,15.54
+PROD10285,Tomatoes (Family Pack),Produce,10.29
+PROD10286,Bagels (Large),Bakery,9.5
+PROD10287,Muffins (Large),Bakery,2.67
+PROD10288,Bacon (Organic),Meat,5.5
+PROD10289,Muffins (Family Pack),Bakery,23.04
+PROD10290,Canned Soup (Regular),Pantry,3.72
+PROD10291,Vegetables (Family Pack),Frozen,17.63
+PROD10292,Coffee (Large),Beverages,7.11
+PROD10293,Crackers (Family Pack),Snacks,20.99
+PROD10294,Bagels (Family Pack),Bakery,3.42
+PROD10295,Nuts (Regular),Snacks,22.16
+PROD10296,Vegetables (Large),Frozen,3.93
+PROD10297,Yogurt (Organic),Dairy,24.89
+PROD10298,Fish (Large),Meat,4.87
+PROD10299,Chips (Regular),Snacks,20.22
+PROD10300,Ice Cream (Organic),Frozen,6.9
+PROD10301,Bananas (Family Pack),Produce,2.11
+PROD10302,Pasta (Family Pack),Pantry,23.79
+PROD10303,Beef (Family Pack),Meat,8.1
+PROD10304,Rice (Regular),Pantry,10.59
+PROD10305,Vegetables (Organic),Frozen,19.99
+PROD10306,Carrots (Regular),Produce,24.64
+PROD10307,Juice (Regular),Beverages,3.63
+PROD10308,Bagels (Regular),Bakery,22.85
+PROD10309,Bagels (Large),Bakery,11.77
+PROD10310,Crackers (Family Pack),Snacks,20.62
+PROD10311,Apples (Organic),Produce,10.73
+PROD10312,Vegetables (Family Pack),Frozen,22.08
+PROD10313,Cheese (Family Pack),Dairy,19.64
+PROD10314,Chips (Regular),Snacks,4.73
+PROD10315,Apples (Large),Produce,10.29
+PROD10316,Coffee (Organic),Beverages,6.15
+PROD10317,Cheese (Regular),Dairy,19.59
+PROD10318,Cheese (Organic),Dairy,16.31
+PROD10319,Coffee (Regular),Beverages,13.26
+PROD10320,Pasta (Family Pack),Pantry,8.03
+PROD10321,Muffins (Large),Bakery,21.93
+PROD10322,Vegetables (Family Pack),Frozen,6.82
+PROD10323,Pasta (Family Pack),Pantry,6.97
+PROD10324,Bananas (Organic),Produce,7.32
+PROD10325,Rice (Family Pack),Pantry,6.83
+PROD10326,Water (Regular),Beverages,17.14
+PROD10327,Bread (Large),Bakery,23.03
+PROD10328,Yogurt (Family Pack),Dairy,18.79
+PROD10329,Vegetables (Regular),Frozen,17.94
+PROD10330,Muffins (Organic),Bakery,10.79
+PROD10331,Muffins (Organic),Bakery,13.81
+PROD10332,Chocolate (Family Pack),Snacks,24.87
+PROD10333,Butter (Large),Dairy,18.72
+PROD10334,Vegetables (Family Pack),Frozen,4.63
+PROD10335,Lettuce (Large),Produce,10.62
+PROD10336,Milk (Regular),Dairy,22.49
+PROD10337,Bagels (Family Pack),Bakery,24.9
+PROD10338,Chocolate (Organic),Snacks,5.18
+PROD10339,Tomatoes (Family Pack),Produce,7.1
+PROD10340,Juice (Family Pack),Beverages,12.02
+PROD10341,Ice Cream (Large),Frozen,13.32
+PROD10342,Crackers (Organic),Snacks,10.83
+PROD10343,Juice (Organic),Beverages,3.44
+PROD10344,Bread (Family Pack),Bakery,2.07
+PROD10345,Cheese (Regular),Dairy,21.47
+PROD10346,Cookies (Family Pack),Bakery,18.83
+PROD10347,Chips (Regular),Snacks,23.26
+PROD10348,Cheese (Regular),Dairy,13.56
+PROD10349,Bananas (Large),Produce,15.84
+PROD10350,Yogurt (Organic),Dairy,2.08
+PROD10351,Bagels (Organic),Bakery,17.96
+PROD10352,Bread (Family Pack),Bakery,7.5
+PROD10353,Yogurt (Large),Dairy,4.7
+PROD10354,Bread (Family Pack),Bakery,15.15
+PROD10355,Lettuce (Family Pack),Produce,10.44
+PROD10356,Fish (Large),Meat,4.02
+PROD10357,Vegetables (Family Pack),Frozen,13.45
+PROD10358,Rice (Large),Pantry,3.45
+PROD10359,Cheese (Family Pack),Dairy,2.38
+PROD10360,Beef (Family Pack),Meat,14.29
+PROD10361,Vegetables (Large),Frozen,6.93
+PROD10362,Bananas (Family Pack),Produce,6.93
+PROD10363,Beef (Family Pack),Meat,7.95
+PROD10364,Fish (Regular),Meat,4.31
+PROD10365,Pizza (Organic),Frozen,23.08
+PROD10366,Soda (Organic),Beverages,19.58
+PROD10367,Crackers (Regular),Snacks,4.56
+PROD10368,Rice (Family Pack),Pantry,13.1
+PROD10369,Pasta (Family Pack),Pantry,10.98
+PROD10370,Butter (Large),Dairy,2.23
+PROD10371,Lettuce (Regular),Produce,23.64
+PROD10372,Pasta (Regular),Pantry,2.74
+PROD10373,Ice Cream (Regular),Frozen,15.19
+PROD10374,Coffee (Organic),Beverages,15.11
+PROD10375,Cookies (Large),Bakery,15.65
+PROD10376,Pasta (Regular),Pantry,18.82
+PROD10377,Bacon (Regular),Meat,10.16
+PROD10378,Bacon (Large),Meat,19.36
+PROD10379,Nuts (Family Pack),Snacks,20.3
+PROD10380,Vegetables (Organic),Frozen,15.72
+PROD10381,Apples (Family Pack),Produce,17.13
+PROD10382,Lettuce (Family Pack),Produce,18.44
+PROD10383,Rice (Organic),Pantry,11.87
+PROD10384,Vegetables (Large),Frozen,4.54
+PROD10385,Fish (Family Pack),Meat,18.07
+PROD10386,Chips (Large),Snacks,7.86
+PROD10387,Water (Family Pack),Beverages,9.92
+PROD10388,Pizza (Large),Frozen,17.08
+PROD10389,Bread (Family Pack),Bakery,8.55
+PROD10390,Lettuce (Large),Produce,12.06
+PROD10391,Ice Cream (Family Pack),Frozen,22.43
+PROD10392,Crackers (Large),Snacks,16.5
+PROD10393,Nuts (Organic),Snacks,18.7
+PROD10394,Eggs (Large),Dairy,3.87
+PROD10395,Chicken (Large),Meat,7.45
+PROD10396,Eggs (Organic),Dairy,10.88
+PROD10397,Bacon (Family Pack),Meat,17.94
+PROD10398,Cookies (Regular),Bakery,5.54
+PROD10399,Cereal (Large),Pantry,7.41
+PROD10400,Ice Cream (Regular),Frozen,5.33
+PROD10401,Vegetables (Family Pack),Frozen,7.97
+PROD10402,Crackers (Organic),Snacks,5.17
+PROD10403,Eggs (Organic),Dairy,3.66
+PROD10404,Pork (Family Pack),Meat,16.61
+PROD10405,Water (Large),Beverages,14.24
+PROD10406,Chicken (Organic),Meat,2.0
+PROD10407,Milk (Family Pack),Dairy,11.92
+PROD10408,Coffee (Organic),Beverages,22.74
+PROD10409,Cereal (Regular),Pantry,6.48
+PROD10410,Coffee (Family Pack),Beverages,23.43
+PROD10411,Pork (Family Pack),Meat,4.24
+PROD10412,Apples (Organic),Produce,24.05
+PROD10413,Chocolate (Family Pack),Snacks,15.42
+PROD10414,Carrots (Regular),Produce,17.84
+PROD10415,Butter (Regular),Dairy,8.13
+PROD10416,Ice Cream (Organic),Frozen,6.3
+PROD10417,Carrots (Large),Produce,2.31
+PROD10418,Bacon (Large),Meat,17.71
+PROD10419,Juice (Large),Beverages,16.77
+PROD10420,Soda (Organic),Beverages,15.91
+PROD10421,Milk (Organic),Dairy,18.17
+PROD10422,Lettuce (Regular),Produce,7.31
+PROD10423,Tomatoes (Family Pack),Produce,9.78
+PROD10424,Bagels (Regular),Bakery,16.66
+PROD10425,Soda (Large),Beverages,4.06
+PROD10426,Chicken (Organic),Meat,14.5
+PROD10427,Rice (Large),Pantry,2.41
+PROD10428,Carrots (Regular),Produce,15.93
+PROD10429,Chocolate (Regular),Snacks,8.69
+PROD10430,Nuts (Regular),Snacks,8.91
+PROD10431,Bread (Large),Bakery,13.94
+PROD10432,Cheese (Regular),Dairy,8.24
+PROD10433,Soda (Large),Beverages,6.33
+PROD10434,Pork (Family Pack),Meat,3.57
+PROD10435,Juice (Regular),Beverages,15.75
+PROD10436,Nuts (Regular),Snacks,19.11
+PROD10437,Muffins (Organic),Bakery,5.12
+PROD10438,Ice Cream (Large),Frozen,4.55
+PROD10439,Bread (Large),Bakery,22.76
+PROD10440,Water (Large),Beverages,9.4
+PROD10441,Ice Cream (Regular),Frozen,9.56
+PROD10442,Bacon (Large),Meat,15.09
+PROD10443,Milk (Regular),Dairy,20.85
+PROD10444,Tomatoes (Large),Produce,13.78
+PROD10445,Beef (Regular),Meat,23.72
+PROD10446,Vegetables (Family Pack),Frozen,9.77
+PROD10447,Milk (Regular),Dairy,24.31
+PROD10448,Bread (Regular),Bakery,12.99
+PROD10449,Muffins (Large),Bakery,15.93
+PROD10450,Ice Cream (Family Pack),Frozen,19.63
+PROD10451,Chocolate (Family Pack),Snacks,4.42
+PROD10452,Cookies (Regular),Bakery,22.43
+PROD10453,Vegetables (Regular),Frozen,4.37
+PROD10454,Vegetables (Regular),Frozen,19.22
+PROD10455,Water (Large),Beverages,8.51
+PROD10456,Lettuce (Large),Produce,2.3
+PROD10457,Carrots (Family Pack),Produce,21.81
+PROD10458,Bananas (Family Pack),Produce,24.24
+PROD10459,Milk (Family Pack),Dairy,21.12
+PROD10460,Chocolate (Large),Snacks,17.43
+PROD10461,Coffee (Regular),Beverages,18.91
+PROD10462,Muffins (Large),Bakery,6.98
+PROD10463,Rice (Family Pack),Pantry,21.63
+PROD10464,Ice Cream (Regular),Frozen,16.58
+PROD10465,Bagels (Regular),Bakery,22.5
+PROD10466,Chocolate (Large),Snacks,10.56
+PROD10467,Pizza (Family Pack),Frozen,9.41
+PROD10468,Butter (Organic),Dairy,12.0
+PROD10469,Bread (Large),Bakery,15.04
+PROD10470,Bread (Regular),Bakery,11.45
+PROD10471,Ice Cream (Family Pack),Frozen,6.39
+PROD10472,Lettuce (Family Pack),Produce,4.94
+PROD10473,Ice Cream (Large),Frozen,11.07
+PROD10474,Canned Soup (Regular),Pantry,19.45
+PROD10475,Pasta (Regular),Pantry,2.39
+PROD10476,Canned Soup (Family Pack),Pantry,19.03
+PROD10477,Cheese (Family Pack),Dairy,13.1
+PROD10478,Juice (Organic),Beverages,3.97
+PROD10479,Chicken (Organic),Meat,21.58
+PROD10480,Yogurt (Large),Dairy,8.51
+PROD10481,Canned Soup (Large),Pantry,2.45
+PROD10482,Pizza (Organic),Frozen,19.06
+PROD10483,Chicken (Family Pack),Meat,6.13
+PROD10484,Muffins (Family Pack),Bakery,16.3
+PROD10485,Chips (Organic),Snacks,4.41
+PROD10486,Canned Soup (Organic),Pantry,18.5
+PROD10487,Chicken (Family Pack),Meat,6.45
+PROD10488,Bananas (Organic),Produce,14.22
+PROD10489,Bagels (Large),Bakery,3.71
+PROD10490,Coffee (Large),Beverages,6.75
+PROD10491,Bagels (Large),Bakery,20.1
+PROD10492,Eggs (Organic),Dairy,20.97
+PROD10493,Yogurt (Family Pack),Dairy,17.61
+PROD10494,Chocolate (Organic),Snacks,20.33
+PROD10495,Cereal (Regular),Pantry,17.85
+PROD10496,Vegetables (Regular),Frozen,11.87
+PROD10497,Cookies (Organic),Bakery,4.45
+PROD10498,Apples (Regular),Produce,14.33
+PROD10499,Crackers (Organic),Snacks,12.34
