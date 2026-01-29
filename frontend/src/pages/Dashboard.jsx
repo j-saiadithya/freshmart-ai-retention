@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import MetricsCard from "../components/dashboard/MetricsCard";
+import MetricDetailsModal from "../components/MetricDetailsModal";
 import {
   UsersIcon,
   CurrencyDollarIcon,
@@ -34,9 +36,22 @@ ChartJS.register(
 );
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [metrics, setMetrics] = useState(null);
   const [revenueData, setRevenueData] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedMetric, setSelectedMetric] = useState(null);
+
+  const openModal = (metricType) => {
+    setSelectedMetric(metricType);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setSelectedMetric(null);
+  };
 
   useEffect(() => {
     fetchDashboardData();
@@ -106,6 +121,7 @@ const Dashboard = () => {
       trend: "up",
       icon: UsersIcon,
       color: "primary",
+      onClick: () => navigate('/customers'),
     },
     {
       title: "Retention Rate",
@@ -116,6 +132,7 @@ const Dashboard = () => {
       trend: "down",
       icon: UsersIcon,
       color: "red",
+      onClick: () => openModal('retention_rate'),
     },
     {
       title: "Avg Basket Size",
@@ -124,6 +141,7 @@ const Dashboard = () => {
       trend: "up",
       icon: ShoppingCartIcon,
       color: "green",
+      onClick: () => openModal('avg_basket'),
     },
     {
       title: "Churn Risk",
@@ -132,6 +150,7 @@ const Dashboard = () => {
       trend: "down",
       icon: ArrowTrendingDownIcon,
       color: "yellow",
+      onClick: () => openModal('churn_risk'),
     },
     {
       title: "Monthly Revenue",
@@ -142,6 +161,7 @@ const Dashboard = () => {
       trend: "up",
       icon: CurrencyDollarIcon,
       color: "purple",
+      onClick: () => openModal('monthly_revenue'),
     },
     {
       title: "Campaign Success",
@@ -152,6 +172,7 @@ const Dashboard = () => {
       trend: "up",
       icon: ChatBubbleLeftRightIcon,
       color: "indigo",
+      onClick: () => openModal('campaign_success'),
     },
   ];
 
@@ -249,7 +270,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto pt-6">
+    <div className="max-w-7xl mx-auto">
       {/* Header with gradient background */}
       <div className="mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-8 shadow-xl">
         <div className="flex items-center justify-between">
@@ -305,7 +326,10 @@ const Dashboard = () => {
 
       {/* Quick Actions */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-        <div className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-6 text-white shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 cursor-pointer">
+        <div 
+          onClick={() => navigate('/campaigns')}
+          className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-6 text-white shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 cursor-pointer"
+        >
           <div className="flex items-center justify-between">
             <div>
               <p className="text-purple-100 font-semibold mb-2">Quick Action</p>
@@ -318,7 +342,10 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl p-6 text-white shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 cursor-pointer">
+        <div 
+          onClick={() => navigate('/analytics')}
+          className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl p-6 text-white shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 cursor-pointer"
+        >
           <div className="flex items-center justify-between">
             <div>
               <p className="text-blue-100 font-semibold mb-2">Insights</p>
@@ -331,7 +358,10 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl p-6 text-white shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 cursor-pointer">
+        <div 
+          onClick={() => openModal('high_risk')}
+          className="bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl p-6 text-white shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 cursor-pointer"
+        >
           <div className="flex items-center justify-between">
             <div>
               <p className="text-amber-100 font-semibold mb-2">Alerts</p>
@@ -344,6 +374,13 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+
+      {/* Metric Details Modal */}
+      <MetricDetailsModal 
+        isOpen={modalOpen}
+        onClose={closeModal}
+        metricType={selectedMetric}
+      />
     </div>
   );
 };

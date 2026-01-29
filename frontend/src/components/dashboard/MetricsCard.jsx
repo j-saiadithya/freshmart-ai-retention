@@ -9,7 +9,8 @@ const MetricsCard = ({
   trend, 
   icon: Icon, 
   color = 'primary',
-  loading = false 
+  loading = false,
+  onClick 
 }) => {
   const colorClasses = {
     primary: 'text-emerald-700 bg-gradient-to-br from-emerald-100 to-teal-100',
@@ -75,12 +76,15 @@ const MetricsCard = ({
       </div>
       <div className="bg-gradient-to-r from-emerald-50 to-teal-50 px-5 py-3 border-t border-gray-100">
         <div className="text-sm">
-          <a href="#" className="font-semibold text-emerald-700 hover:text-emerald-900 transition-colors inline-flex items-center group">
+          <button 
+            onClick={onClick}
+            className="font-semibold text-emerald-700 hover:text-emerald-900 transition-colors inline-flex items-center group w-full"
+          >
             View details 
             <svg className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </a>
+          </button>
         </div>
       </div>
     </div>

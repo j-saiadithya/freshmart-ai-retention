@@ -5,15 +5,17 @@ import {
   UserCircleIcon,
   Cog6ToothIcon,
 } from '@heroicons/react/24/outline';
+import { useNavigate } from 'react-router-dom';   // ✅ ADDED
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();                // ✅ ADDED
 
   return (
     <nav className="bg-white shadow-md border-b-4 border-emerald-500 fixed w-full z-10">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          
+
           {/* Search */}
           <div className="flex-1 flex items-center">
             <div className="max-w-lg w-full lg:max-w-xs">
@@ -47,7 +49,11 @@ const Navbar = () => {
               <span className="absolute top-1 right-1 block h-2.5 w-2.5 rounded-full bg-gradient-to-br from-orange-400 to-red-500 ring-2 ring-white shadow-lg animate-pulse"></span>
             </button>
 
-            <button className="p-2 rounded-xl text-gray-500 hover:text-emerald-600 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition-all">
+            {/* ✅ SETTINGS NAVIGATION FIX */}
+            <button
+              onClick={() => navigate('/settings')}
+              className="p-2 rounded-xl text-gray-500 hover:text-emerald-600 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition-all"
+            >
               <span className="sr-only">Settings</span>
               <Cog6ToothIcon className="h-6 w-6" />
             </button>
