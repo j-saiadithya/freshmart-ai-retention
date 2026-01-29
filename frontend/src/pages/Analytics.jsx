@@ -102,6 +102,8 @@ const Analytics = () => {
           "#facc15",
           "#c084fc",
         ],
+        borderWidth: 3,
+        borderColor: '#fff',
       },
     ],
   };
@@ -112,7 +114,10 @@ const Analytics = () => {
       {
         label: "Customers",
         data: Object.values(customerSegments.age_segments || {}),
-        backgroundColor: "#3b82f6",
+        backgroundColor: "rgba(16, 185, 129, 0.8)",
+        borderRadius: 8,
+        borderWidth: 2,
+        borderColor: 'rgb(16, 185, 129)',
       },
     ],
   };
@@ -123,9 +128,46 @@ const Analytics = () => {
       {
         label: "Revenue ($)",
         data: revenueData.revenue,
-        backgroundColor: "#10b981",
+        backgroundColor: "rgba(16, 185, 129, 0.8)",
+        borderRadius: 8,
+        borderWidth: 2,
+        borderColor: 'rgb(16, 185, 129)',
       },
     ],
+  };
+
+  const chartOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        labels: {
+          font: {
+            family: "'Inter', sans-serif",
+            size: 12,
+            weight: 600,
+          },
+          usePointStyle: true,
+          padding: 15,
+        }
+      },
+      tooltip: {
+        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+        padding: 12,
+        cornerRadius: 8,
+      },
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        grid: {
+          color: 'rgba(16, 185, 129, 0.1)',
+        },
+      },
+      x: {
+        grid: { display: false },
+      },
+    },
   };
 
   /* -------------------- KPI Cards -------------------- */
@@ -137,6 +179,7 @@ const Analytics = () => {
       trend: "down",
       change: "-5%",
       icon: UsersIcon,
+      color: "from-red-500 to-orange-500",
     },
     {
       title: "Avg Basket Size",
@@ -144,6 +187,7 @@ const Analytics = () => {
       trend: "up",
       change: "+8%",
       icon: ShoppingCartIcon,
+      color: "from-green-500 to-emerald-500",
     },
     {
       title: "Monthly Revenue",
@@ -151,6 +195,7 @@ const Analytics = () => {
       trend: "up",
       change: "+15%",
       icon: CurrencyDollarIcon,
+      color: "from-purple-500 to-pink-500",
     },
     {
       title: "Campaign Success",
@@ -158,6 +203,7 @@ const Analytics = () => {
       trend: "up",
       change: "+3%",
       icon: ChartBarIcon,
+      color: "from-blue-500 to-cyan-500",
     },
   ];
 
@@ -173,29 +219,40 @@ const Analytics = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto p-6 space-y-8">
-      <h1 className="text-2xl font-bold text-gray-900">
-        Analytics Dashboard
-      </h1>
+    <div className="max-w-7xl mx-auto space-y-8 pt-6">
+      {/* Header */}
+      <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-8 shadow-xl">
+        <div className="flex items-center space-x-3">
+          <ChartBarIcon className="h-8 w-8 text-white" />
+          <div>
+            <h1 className="text-3xl font-bold text-white">Analytics Dashboard</h1>
+            <p className="text-emerald-100 text-lg mt-1">Deep insights into your retail performance</p>
+          </div>
+        </div>
+      </div>
 
       {/* KPI Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {kpis.map((kpi, idx) => (
-          <div key={idx} className="card p-6">
-            <div className="flex justify-between">
+          <div key={idx} className="bg-white rounded-2xl shadow-lg p-6 border-2 border-gray-100 hover:shadow-xl hover:border-emerald-200 transition-all">
+            <div className="flex justify-between items-start">
               <div>
-                <p className="text-sm text-gray-500">{kpi.title}</p>
-                <p className="text-2xl font-bold">{kpi.value}</p>
-                <div className="flex items-center mt-1">
+                <p className="text-sm text-gray-600 font-bold uppercase tracking-wide">{kpi.title}</p>
+                <p className="text-3xl font-bold text-gray-900 mt-2">{kpi.value}</p>
+                <div className="flex items-center mt-2">
                   {kpi.trend === "up" ? (
                     <ArrowTrendingUpIcon className="h-4 w-4 text-green-500 mr-1" />
                   ) : (
                     <ArrowTrendingDownIcon className="h-4 w-4 text-red-500 mr-1" />
                   )}
-                  <span className="text-sm">{kpi.change}</span>
+                  <span className={`text-sm font-semibold ${kpi.trend === 'up' ? 'text-green-600' : 'text-red-600'}`}>
+                    {kpi.change}
+                  </span>
                 </div>
               </div>
-              <kpi.icon className="h-8 w-8 text-primary-600" />
+              <div className={`rounded-xl p-3 bg-gradient-to-br ${kpi.color} shadow-lg`}>
+                <kpi.icon className="h-7 w-7 text-white" />
+              </div>
             </div>
           </div>
         ))}
@@ -203,31 +260,37 @@ const Analytics = () => {
 
       {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="card p-6">
-          <h2 className="font-semibold mb-4">Revenue Trend</h2>
-          <Bar data={revenueBarData} />
+        <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-gray-100">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Revenue Trend</h2>
+          <div className="h-80">
+            <Bar data={revenueBarData} options={chartOptions} />
+          </div>
         </div>
 
-        <div className="card p-6">
-          <h2 className="font-semibold mb-4">Loyalty Distribution</h2>
-          <Pie data={loyaltyPieData} />
+        <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-gray-100">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Loyalty Distribution</h2>
+          <div className="h-80">
+            <Pie data={loyaltyPieData} />
+          </div>
         </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="card p-6">
-          <h2 className="font-semibold mb-4">Age Distribution</h2>
-          <Bar data={ageBarData} />
+        <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-gray-100">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Age Distribution</h2>
+          <div className="h-80">
+            <Bar data={ageBarData} options={chartOptions} />
+          </div>
         </div>
 
-        <div className="card p-6">
-          <h2 className="font-semibold mb-4">Top Cities</h2>
-          <div className="space-y-3">
+        <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-gray-100">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Top Cities</h2>
+          <div className="space-y-3 mt-6">
             {Object.entries(customerSegments.city_segments || {}).map(
               ([city, count]) => (
-                <div key={city} className="flex justify-between">
-                  <span>{city}</span>
-                  <span className="font-semibold">
+                <div key={city} className="flex justify-between items-center p-3 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
+                  <span className="font-semibold text-gray-900">{city}</span>
+                  <span className="font-bold text-emerald-700">
                     {count.toLocaleString()}
                   </span>
                 </div>
