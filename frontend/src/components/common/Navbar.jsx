@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import {
   BellIcon,
   MagnifyingGlassIcon,
-  UserCircleIcon,
   Cog6ToothIcon,
 } from '@heroicons/react/24/outline';
-import { useNavigate } from 'react-router-dom';   // ✅ ADDED
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();                // ✅ ADDED
+  const navigate = useNavigate();
 
   return (
     <nav className="bg-white shadow-md border-b-4 border-emerald-500 fixed w-full z-10">
@@ -43,13 +42,14 @@ const Navbar = () => {
 
           {/* Right side */}
           <div className="flex items-center space-x-3">
+            {/* Notifications */}
             <button className="relative p-2 rounded-xl text-gray-500 hover:text-emerald-600 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition-all">
               <span className="sr-only">View notifications</span>
               <BellIcon className="h-6 w-6" />
               <span className="absolute top-1 right-1 block h-2.5 w-2.5 rounded-full bg-gradient-to-br from-orange-400 to-red-500 ring-2 ring-white shadow-lg animate-pulse"></span>
             </button>
 
-            {/* ✅ SETTINGS NAVIGATION FIX */}
+            {/* Settings */}
             <button
               onClick={() => navigate('/settings')}
               className="p-2 rounded-xl text-gray-500 hover:text-emerald-600 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition-all"
@@ -57,20 +57,6 @@ const Navbar = () => {
               <span className="sr-only">Settings</span>
               <Cog6ToothIcon className="h-6 w-6" />
             </button>
-
-            <div className="flex items-center border-l-2 border-emerald-200 pl-4 ml-2">
-              <div className="h-9 w-9 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">A</span>
-              </div>
-              <div className="ml-3 hidden md:block">
-                <p className="text-sm font-semibold text-gray-800">
-                  Admin User
-                </p>
-                <p className="text-xs text-emerald-600 font-medium">
-                  admin@freshmart.com
-                </p>
-              </div>
-            </div>
           </div>
 
         </div>
